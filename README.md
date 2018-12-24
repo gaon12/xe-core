@@ -2,6 +2,11 @@
 
 - [XpressEngine 1.x](https://github.com/xpressengine/xe-core)에서 관리자 페이지서 (?) 버튼 클릭시 나오는 사용 설명서(?), 정확히는 XE Admin Help 문서를 현재 버전에 맞게 수정한 것입니다.
 
+# PR과 제안은 환영입니다!
+
+- 많은 PR과 제안은 더 좋은 내용으로 만들어 갑니다.
+- 제안은 이슈(issue)를 통해 해주세요.
+
 # 라이선스
 
 - 라이선스는 XE 1.x와 마천가지로 LGPL 라이선스를 사용합니다.
