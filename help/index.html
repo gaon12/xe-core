@@ -1084,7 +1084,7 @@ body,table,input,textarea,select,button{font-family:나눔고딕,NanumGothic,NG,
 				<h1 id="supplement">부록</h1>
 				<section class="h2">
 					<h1 id="UMAN_config_on_window">Windows 환경 설정</h1>
-					<p>Windows 환경에서 XE를 설치하는 방법에는 크게 두 가지가 있습니다. WPI를 사용하는 방법과 XAMPP을 사용하는 방법입니다. 두 가지 방법 모두 웹 서버인 IIS(Internet Information Server)를 설치할 때 포트 번호로 80을 사용하도록 설정하기 때문에, 한 컴퓨터에 두 가지 방법을 모두 사용할 수 없습니다. 사용자의 설치 환경에 따라 두 가지 방법 중 하나를 선택해서 사용합니다.</p>
+					<p>Windows 환경에서 XE를 설치하는 방법에는 크게 두 가지가 있습니다. WPI를 사용하는 방법과 XAMPP을 사용하는 방법입니다. 두 가지 방법 모두 웹 서버를 설치할 때 포트 번호로 80을 사용하도록 설정하기 때문에, 한 컴퓨터에 두 가지 방법을 모두 사용할 수 없습니다. 사용자의 설치 환경에 따라 두 가지 방법 중 하나를 선택해서 사용합니다.</p>
 					<blockquote> <strong>참고</strong>
 						<p>Windows XP에서 WPI를 사용하여 XE를 설치하면 URL을 기억하기 쉽게 줄여주는 mod_rewrite를 사용할 수 없습니다. mod_rewrite를 사용하려면 XAMPP을 사용해서 XE를 설치해야 합니다.</p>
 						<p>WPI로 패키징된 XE는 1.4.0.5 버전입니다. 최신 버전의 XE를 설치하려면 XAMPP을 사용하거나, WPI를 사용해서 설치한 후에 XE core를 별도로 업데이트해야 합니다.</p>
@@ -1112,72 +1112,7 @@ body,table,input,textarea,select,button{font-family:나눔고딕,NanumGothic,NG,
 					</section>
 					<section class="h3">
 						<h1 id="UMAN_use_WPI">WPI 사용</h1>
-						<p>WPI는 마이크로소프트 사에서 웹 플랫폼 제품을 편리하게 사용할 수 있도록 만든 도구입니다. 서버에 필요한 구성 요소나 웹 응용프로그램을 자동으로 설치 및 설정합니다.</p>
-						<p>WPI는 웹 응용프로그램을 설치할 때 그 웹 응용프로그램에 필요한 구성 요소를 한꺼번에 설치합니다. 따라서 WPI를 사용하여 XE를 설치할 때 XE 설치에 필요한 프로그램도 함께 설치됩니다.</p>
-						<p>마이크로소프트 웹 플랫폼 공식 사이트(<a href="http://www.microsoft.com/web/default.aspx" target="_blank">http://www.microsoft.com/web/default.aspx</a>)에서 WPI 실행기를 다운로드합니다.</p>
-						<h2 id="UMAN_launcher_execute">WPI 실행기 실행 및 XE 설치 시작</h2>
-						<ol>
-							<li>WPI 실행기를 실행하고, 웹 응용 프로그램 탭에서 콘텐츠 관리를 선택합니다.</li>
-							<li> 콘텐츠 관리 탭의 응용 프로그램 목록 중에서 XpressEngine을 찾아 선택하고 설치를 누릅니다.
-								<figure> <img src="img/image048.jpg" width="503" height="373" alt="콘텐츠 관리 탭"> </figure>
-							</li>
-							<li>XE core를 설치하기 위해 추가로 설치 및 설정되는 구성 요소 정보를 확인하고 동의함을 클릭하여 설치합니다.</li>
-						</ol>
-						<h2 id="UMAN_install_additional_components">추가 구성 요소의 설치</h2>
-						<p>추가로 설치되는 구성 요소 중에 MySQL DBMS가 포함되어 있으면 MySQL DBMS을 설치하면서 관리자 암호를 지정해야 합니다. 관리자 암호를 지정하는 화면이 나타나면 암호를 지정하고 계속을 클릭합니다.</p>
-						<blockquote> <strong>참고</strong>
-							<p>WPI에서 MySQL 관리자 암호를 처음 지정할 때, 영소문자, 영대문자, 숫자, 기호가 모두 포함된 암호를 지정해야 합니다. MySQL 관리자 암호는 XE를 설치할 때 반드시 필요한 정보이므로 꼭 기억해 두어야 합니다.</p>
-						</blockquote>
-						<p>계정 설정이 완료되면 구성 요소가 설치됩니다.</p>
-						<h2 id="UMAN_input_information">XE 설치에 필요한 정보 입력</h2>
-						<p>XE 설치에 필요한 구성 요소의 설치가 끝나면 XE 설치가 시작됩니다.</p>
-						<ol>
-							<li> 다음과 같이 XE를 설치할 사이트 정보를 입력하고 계속을 클릭합니다.
-								<p>특별히 추가로 설정할 내용이 없다면 기본 설정을 그대로 사용합니다.</p>
-								<figure> <img src="img/image049.jpg" width="511" height="396" alt="웹 플랫폼 설치 화면"> </figure>
-							</li>
-							<li> 다음과 같이 XE core 설치 정보를 입력하고 계속을 클릭합니다.
-								<dl>
-									<dt>데이터베이스: </dt>
-									<dd>XE에서 사용할 DBMS의 종류. 이 문서에서는 MySQL을 선택합니다.</dd>
-									<dt>새 데이터베이스 만들기 또는 기존 데이터베이스 사용: </dt>
-									<dd>기존의 데이터베이스를 사용하여 XE를 운영할 것인지, 새 데이터베이스를 사용할 것인지 선택. 가능하면 새 데이터베이스 만들기를 권장합니다.</dd>
-									<dt>데이터베이스 관리자: </dt>
-									<dd>선택된 DBMS의 관리자 ID. 이 문서에서 사용된 MySQL의 관리자 ID는 root입니다.</dd>
-									<dt>데이터베이스 관리자 암호: </dt>
-									<dd>선택된 DBMS의 관리자 암호. &quot;추가 구성 요소의 설치&quot;에서 지정한 MySQL 관리자 암호를 입력합니다.</dd>
-									<dt>데이터베이스 사용자 이름: </dt>
-									<dd>XE에서 데이터베이스에 접근할 때 사용할 사용자 이름</dd>
-									<dt>데이터베이스 암호: </dt>
-									<dd>XE에서 데이터베이스에 접근할 때 사용할 사용자 암호</dd>
-									<dt>데이터베이스 서버: </dt>
-									<dd>DBMS가 설치된 위치를 URL 형식으로 지정. 이 문서에서는 서버와 DBMS가 같은 컴퓨터에서 동작하므로 localhost를 입력합니다.</dd>
-									<dt>데이터베이스 이름: </dt>
-									<dd>XE에서 사용할 기존 혹은 새 데이터베이스의 이름</dd>
-									<dt>데이터베이스 테이블 접두사: </dt>
-									<dd>XE에서 생성한 테이블 이름에 사용할 머리말</dd>
-									<dt>XE 관리자 ID: </dt>
-									<dd>XE 관리자 ID</dd>
-									<dt>XE 관리자 이름: </dt>
-									<dd>XE 관리자 이름</dd>
-									<dt>XE 관리자 닉네임: </dt>
-									<dd>XE 관리자 계정의 별명</dd>
-									<dt>XE 관리자 패스워드: </dt>
-									<dd>XE 관리자 계정의 패스워드</dd>
-									<dt>XE 관리자 e-mail 주소: </dt>
-									<dd>XE 관리자 계정의 e-mail 주소</dd>
-									<dt>URL Rewrite 사용 여부: </dt>
-									<dd>mod_rewrite 사용 여부. 이 항목을 활성화하면 URL을 기억하기 쉽게 줄여서 사용할 수 있습니다.</dd>
-									<dt>GMT Timezone: </dt>
-									<dd>XE가 서비스할 지역의 표준시</dd>
-								</dl>
-							</li>
-						</ol>
-						<h2 id="UMAN_confirm_install">설치 확인</h2>
-						<p>모든 설치 과정이 완료되면 웹 브라우저를 사용하여 사이트에 접속합니다. 정상적으로 설치가 완료되었으면 다음과 같은 화면이 나타납니다.</p>
-						<figure> <img src="img/image050.jpg" width="565" height="355" alt="XE 설치 완료 화면">
-							<figcaption>XE 설치 완료 화면</figcaption>
-						</figure>
+						<p>WPI는 마이크로소프트 사에서 웹 플랫폼 제품을 편리하게 사용할 수 있도록 만든 도구입니다. 서버에 필요한 구성 요소나 웹 응용프로그램을 자동으로 설치 및 설정합니다. 하지만 최신 버전을 제공하지 않기 때문에 권장하지 않습니다.</p>
 						<blockquote> <strong>참고</strong>
 							<p>WPI를 사용해서 XE를 설치하면 최신 버전의 XE core가 설치되지 않습니다. XE core를 최신 버전으로 업데이트하려면 공식사이트에서 제공하는 XE core 최신 버전 파일을 다운로드해서 압축을 해제한 후 XE 설치 사이트 최상위 폴더(C:\Inetpub\wwwroot\xe)에 덮어 쓰도록 합니다.</p>
 						</blockquote>
@@ -1188,7 +1123,7 @@ body,table,input,textarea,select,button{font-family:나눔고딕,NanumGothic,NG,
 						<h2 id="UMAN_install_XAMPP">XAMPP 설치</h2>
 						<p>다음과 같이 XAMPP을 설치합니다.</p>
 						<ol>
-							<li>XAMPP 공식 사이트(<a href="http://www.XAMPP.com" target="_blank">http://www.XAMPP.com</a>)에서 최신 XAMPP 설치 파일을 다운로드합니다. 문서 작성 시점에 배포되어 있는 최신 버전은 XAMPP 7입니다.</li>
+							<li>XAMPP 공식 사이트(<a href="https://www.apachefriends.org/" target="_blank">https://www.apachefriends.org/</a>)에서 최신 XAMPP 설치 파일을 다운로드합니다. 문서 작성 시점에 배포되어 있는 최신 버전은 XAMPP 7입니다.</li>
 							<li> 다운로드한 설치 파일을 실행합니다. 특별한 설정이 필요 없으면 기본 설정 상태로 설치를 진행하여 완료합니다.
 								<blockquote> <strong>참고</strong>
 									<p>XAMPP은 아파치 웹 서버를 설치할 때 포트 번호로 80을 사용하도록 설정합니다. 그러므로 시스템에 이미 포트 번호로 80을 사용하는 소프트웨어가 있을 경우에는 XAMPP을 정상적으로 설치할 수 없습니다.</p>
@@ -1218,7 +1153,7 @@ body,table,input,textarea,select,button{font-family:나눔고딕,NanumGothic,NG,
 							</li>
 						</ol>
 						<h2 id="UMAN_decompress_XECore">XE core 설치 파일 압축 해제</h2>
-						<p>\APM_setup\htdocs에 XE core 최신 설치 파일의 압축을 해제합니다.</p>
+						<p>\xampp\htdocs에 XE core 최신 설치 파일의 압축을 해제합니다.</p>
 						<p>압축 해제가 완료되면 xe 디렉터리가 생성된 것을 확인할 수 있습니다. 도메인 경로로 웹 페이지에 접근하려면 생성된 xe 디렉터리 하위 내용을 최상위 디렉터리로 이동시킵니다.</p>
 						<p>이제 <a href="#UMAN_core_install">&quot;XE core 설치&quot;</a>를 참조해서 XE core를 설치합니다.</p>
 					</section>
@@ -1236,17 +1171,17 @@ body,table,input,textarea,select,button{font-family:나눔고딕,NanumGothic,NG,
 							<li> XE 설치 및 운영에 필요한 모든 정보가 저장될 데이터베이스의 계정 정보를 확인합니다. 사용 중인 DBMS 계정 생성 및 확인 방법은 공식 사이트를 참고하시기 바랍니다.
 								<dl>
 									<dt>CUBRID 공식 사이트</dt>
-									<dd><a href="http://www.cubrid.com/zbxe/home" target="_blank">http://www.cubrid.com/zbxe/home</a></dd>
+									<dd><a href="http://www.cubrid.com" target="_blank">http://www.cubrid.com</a></dd>
 									<dt>Firebird 공식 사이트</dt>
-									<dd><a href="http://www.firebirdsql.org/" target="_blank">http://www.firebirdsql.org/</a></dd>
+									<dd><a href="https://www.firebirdsql.org/" target="_blank">https://www.firebirdsql.org/</a></dd>
 									<dt>MySQL 공식 사이트 </dt>
-									<dd><a href="http://www.MySQL.com/" target="_blank">http://www.MySQL.com/</a></dd>
+									<dd><a href="https://www.mysql.com/" target="_blank">https://www.mysql.com/</a></dd>
 									<dt>PostgreSQL 공식 사이트</dt>
-									<dd><a href="http://www.postgresql.org/" target="_blank">http://www.postgresql.org/</a></dd>
+									<dd><a href="https://www.postgresql.org/" target="_blank">https://www.postgresql.org/</a></dd>
 									<dt>SQLite 공식 사이트</dt>
-									<dd><a href="http://www.sqlite.org/" target="_blank">http://www.sqlite.org/</a></dd>
+									<dd><a href="https://www.sqlite.org" target="_blank">https://www.sqlite.org</a></dd>
 									<dt>MS SQL 서버 공식 사이트</dt>
-									<dd><a href="http://www.microsoft.com/korea/sqlserver/2008/default.aspx" target="_blank">http://www.microsoft.com/korea/sqlserver/2008/default.aspx</a></dd>
+									<dd><a href="https://www.microsoft.com/ko-kr/sql-server" target="_blank">https://www.microsoft.com/ko-kr/sql-server</a></dd>
 								</dl>
 							</li>
 						</ol>
@@ -1256,9 +1191,9 @@ body,table,input,textarea,select,button{font-family:나눔고딕,NanumGothic,NG,
 						<p>서버에 접근하기 위해서 PuTTY(퍼티)라는 원격 접속 프로그램을 사용합니다. PuTTY는 telnet이나 SSH(Secure Shell) 프로토콜을 지원하는 서버에서만 사용할 수 있습니다.</p>
 						<p>PuTTY 프로그램의 설치 및 사용 방법은 다음과 같습니다.</p>
 						<ol>
-							<li> KLDP 한글 iPuTTY 프로젝트(<a href="http://www.kldp.net/projects/iputty/download" target="_blank">http://www.kldp.net/projects/iputty/download</a>)에서 설치 파일을 다운로드해서 설치합니다.
+							<li> KLDP 한글 iPuTTY 프로젝트(<a href="https://github.com/iPuTTY/iPuTTY/releases" target="_blank">https://github.com/iPuTTY/iPuTTY/releases</a>)에서 설치 파일을 다운로드해서 설치합니다.
 								<blockquote> <strong>참고</strong>
-									<p>PuTTY 공식 사이트(<a href="http://www.putty.nl/" target="_blank">http://www.putty.nl/</a>)에서 다운로드한 프로그램은 한글이 지원되지 않으므로, 위의 사이트에서 설치 파일을 다운로드하기를 권장합니다.</p>
+									<p>PuTTY 공식 사이트(<a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/" target="_blank">https://www.chiark.greenend.org.uk/~sgtatham/putty/</a>)에서 다운로드한 프로그램은 한글이 지원되지 않으므로, 위의 사이트에서 설치 파일을 다운로드하기를 권장합니다.</p>
 								</blockquote>
 							</li>
 							<li>PuTTY 실행 화면에서 Host Name에 서버 주소를 입력하고 창 아래쪽의 열기를 클릭합니다.</li>
